@@ -1,0 +1,219 @@
+:root{
+    --cinza-claro: #F5F5F5;
+    --cinza-escuro: #C4C4C4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background: var(--cinza-claro);
+    width: 100%;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.5rem 2rem;
+    margin-right: 0.5rem;
+    font-size: 1.3rem;
+    color: #6D6D6D;
+}
+
+header ul li:hover {
+    cursor: pointer;
+    background-color: var(--cinza-escuro);
+}
+
+header ul li:nth-child(5n) {
+    border-left: 1px solid #D2D2D2;
+}
+
+header ul li:last-child {
+    border-right: 1px solid #D2D2D2;
+}
+
+header ul li i {
+    font-size: 3rem;
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 20%;
+}
+
+.sidebar ul{
+    background: var(--cinza-claro);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul li {
+    list-style: none;
+    font-size: 1.5rem;
+    padding: 2.5rem 0rem;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar ul li:hover {
+    cursor: pointer;
+    font-weight: 500;
+    background-color: #BDDAFF;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+section h1 {
+    padding-top: 2rem;
+    font-family: 'Cabin', sans-serif;
+    font-size: 5rem;
+    color: #295F8A;
+}
+
+section .produto {
+    width: 30rem;
+    height: 19rem;
+    padding: 1rem;
+    margin-top: 7rem;
+    position: absolute;
+}
+
+section .produto:hover {
+    cursor: pointer;
+}
+
+section .container {
+    background: var(--cinza-escuro);
+    margin-top: 9rem;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+}
+
+input {
+    border-radius: 0.3rem;
+    border: 1px solid #7A7A7A;
+    height: 2rem;
+}
+
+.cadastro-form fieldset {
+    border: none;
+    padding: 9rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    margin-right: 3rem;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input {
+    width: 20rem;
+    margin-bottom: 1rem;
+}
+
+.form-group p {
+    font-size: 1.2rem;
+    color: #727272;
+}
+
+.form-group:nth-child(4n+1) input {
+    width: 34rem;
+    margin-right: 3rem;
+}
+
+.form fieldset {
+    border: 1px solid #898989;
+    border-style: solid none none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem; 
+}
+
+.legend {
+    text-align: center;
+    color: #474747;
+    padding: 0rem 3rem 1rem 3rem;
+}
+
+.form-group select {
+    width: 20rem;
+}
+
+.fiscal-form .form-group:nth-child(3) select {
+    width: 6rem;
+}
+
+.fiscal-form .form-group input {
+    width: 8rem;
+}
+
+.opcoes-form select {
+    display: block;
+    width: 20rem;
+}
+
+.opcoes-form fieldset button {
+    display: block;
+    float: left;
+}
+
+.select-options {
+    margin-right: 30rem;
+}
+
+.adc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.adc p img {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 1rem;
+}
+
+.adc p {
+    background-color: #295F8A;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    border-radius: 0.7rem;
+}
+
+
+
+
+

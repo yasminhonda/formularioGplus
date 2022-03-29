@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário GPlus</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><i class="fas fa-reply" style="color:#6FB0DC"></i>voltar</li>
+            <li><i class="fas fa-save" style="color: #93BA6C;"></i>salvar (F12)</li>
+            <li><i class="far fa-circle"></i>xxxxxxx</li>
+            <li><i class="far fa-circle"></i>xxxxxxx</li>
+            <li><i class="fas fa-arrow-left" style="color: #468ADC;"></i>Anterior</li>
+            <li><i class="fas fa-arrow-right" style="color: #468ADC;"></i>Próximo</li>
+        </ul>
+    </header>
+    
+    <main>
+        <nav class="sidebar">
+            <ul>
+                <li href="#">Cadastro Rápido</li>
+                <li>Informações Básicas</li>
+                <li>Estoque</li>
+                <li>Grupo</li>
+                <li>Fiscal</li>
+            </ul>
+        </nav>
+
+        <section class="cadastroRapido">
+            <h1>CHEDDAR</h1>
+            <img class="produto" src="./assets/img/cheddar.jpg" alt="imagem do lanche de cheddar">
+            <div class="container">
+                <div class="cadastro-form">
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="productName">Nome do Produto:</label>
+                            <input type="text" id="productName">
+                        </div>
+                        <div class="form-group">
+                            <label for="codDeBalanca">Cód. de Balança:</label>
+                            <input type="text" id="codDeBalanca">
+                        </div>
+                        <div class="form-group">
+                            <label for="codDoCardapio">Cód. do Cardápio:</label>
+                            <input type="text" id="codDoCardapio">
+                        </div>
+                        <div class="form-group">
+                            <label for="codDeBarras">Cód. de Barras:</label>
+                            <input type="text" id="codDeBarras">
+                        </div>
+                        <div class="form-group">
+                            <label for="touchName">Nome Touch:</label>
+                            <p>modo touch no caixa</p>
+                            <input type="text" id="touchName">
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form">
+                    <fieldset>
+                        <legend class="legend">CLASSIFICAÇÃO</legend>
+                        <div class="form-group">
+                            <label for="unidCompra">Unidade de Compra:</label>
+                            <select id="unidCompra">
+                                <option value="UN">UN</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="unidVenda">Unidade de Venda:</label>
+                            <select id="unidVenda">
+                                <option value="UN">UN</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="setor">Setor:</label>
+                            <select id="setor">
+                                <option value="lanches">Lanches</option>
+                                <option value="pasteis">Pastéis</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form fiscal-form">
+                    <fieldset>
+                        <legend class="legend">FISCAL</legend>
+                        <div class="form-group">
+                            <label for="tributationType">Tipo de Tributação:</label>
+                            <select id="tributationType">
+                                <option value="normal">NORMAL</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="icms">ICMS:</label>
+                            <select id="icms">
+                                <option value="18">18%</option>
+                                <option value="20">20%</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="csosn">CSOSN:</label>
+                            <input type="number" id="csosn">
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form opcoes-form">
+                    <fieldset>
+                        <legend class="legend">OPÇÕES</legend>
+                        <div class="select-options">
+                            <label for="options">Selecione as Opções:</label>
+                            <select id="options" onchange="adc()">
+                                <option enabled value="Mostrar no Aplicativo">Mostrar no Aplicativo</option>
+                                <option value="Solicitar Observações">Solicitar Observações</option>
+                                <option value="Solicitar Adicionais">Solicitar Adicionais</option>
+                                <option value="Aplicar taxas e comissões">Aplicar taxas e comissões</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p>Opções Adicionadas:</p>
+                            <div class="adc">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/62b25bdc6e.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
